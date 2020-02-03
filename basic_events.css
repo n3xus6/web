@@ -1,0 +1,10 @@
+html {
+    background: white;
+}
+
+body {
+    border: 2px solid black;
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+}

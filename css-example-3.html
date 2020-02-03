@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html leng="en-US">
+    <head>
+        <meta charset='utf-8'>
+        <title>CSS example page 3</title>
+        <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 15px;
+            gap: 15px;
+            margin-top: 65px;
+        }
+        
+        .container > article {
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid grey;
+            padding: 10px;
+            background: lightgrey;
+        }
+        
+        #a {
+            grid-column: 3;
+            grid-row: 2;
+        }
+        
+        #h {
+            grid-column: 2;
+            grid-row: 4;
+        }
+        
+        #i {
+            grid-column: 1 / 4;
+            grid-row: 5;
+        }
+        
+        .box1 {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            padding: 1em;
+            border: 3px solid blue;
+            border-radius: 1em;
+            float: left;
+            margin: 1em;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            padding: 1em;
+            border: 3px solid blue;
+            border-radius: 1em;
+            float: right;
+            margin: 1em;
+        }
+        
+        .parag {
+            border: 2px solid blue;
+            background-color: lightblue;
+            color: black;
+            padding: 2em;
+            letter-spacing: 0.2em;
+        }
+        
+        #pos {
+            color: white;
+            border-color: grey;
+            background-color: blue;
+            /* static - default */
+            /* position: static; */
+            
+            /* relative - modify final position */
+            /*
+            position: relative;
+            top: 30px;
+            left: 30px;
+            */
+            
+            /* absolute - separate from everything */
+            /*
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            */
+        }
+        
+        /*
+        #pos2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        */
+        
+        body {
+            width: 600px;
+            height: 2400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            /* fixed - relative to the browser viewport */
+            position: fixed;
+            width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.5);
+            padding: 10px;
+            top: 0;
+        }
+        
+        #stickp {
+            position: sticky;
+            background: orange;
+            color: white;
+            top: 65px;
+
+        }
+        
+        .multicol-container {
+            column-count: 3;
+            column-gap: 50px;
+            column-rule: 2px dashed orange;
+        }
+        </style>
+    </head>
+    <body>
+    <h1>CSS example 3 - Page Layout</h1>
+    <section class='container'>
+        <article id='a'>I'm on column 3, row 2</article>
+        <article id='b'>grid layout example</article>
+        <article id='c'>article</article>
+        <article id='d'>article</article>
+        <article id='e'>article</article>
+        <article id='f'>article</article>
+        <article id='g'>article</article>
+        <article id='h'>I'm the only one in this row</article>
+        <article id='i'>multispan columns</article>
+    </section>
+    <p id='stickp'>STICKY property</p>
+    <div class='box1'>Float left</div>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.</p>
+    <div class='box2'>Float right</div>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue.</p>
+    <p class='parag'>Paragraph</p>
+    <p class='parag' id='pos'>Paragraph</p>
+    <div class='multicol-container'>
+        <h2>Multicol demo</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+        Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+        Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse
+        ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit
+        quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.
+        </p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+        Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+        Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse
+        ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit
+        quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.
+        </p>
+    </div>
+    </body>
+</html>

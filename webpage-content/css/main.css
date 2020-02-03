@@ -1,0 +1,31 @@
+html {
+  background-color: grey;
+  font-size: 14px;
+}
+
+body {
+  width: 750px;
+  margin: 0 auto;
+  padding: 0px 10px 5px 10px; /* top rigth bottom left */
+  background-color: lightgrey;
+}
+
+p, dl, ol, ul {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.headline {
+  color: #000080;
+  text-align: center;
+  text-shadow: 4px 4px 5px grey;
+}
+
+.picture {
+  width: 80%; /* relative to body width */
+  height: auto; /* without height the picture is distorted */
+  border: 2px solid darkblue;
+  background-color: blue;
+  padding: 2px;
+}
+

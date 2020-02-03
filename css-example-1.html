@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset='utf-8'>
+        <title>CSS example page 1</title>
+        <style>
+            html {
+                font-size: 10px; /* for easier calculation */
+            }
+            p {
+                font-size: 1.6em;
+            }
+            li { /* element selector example */
+		font-size: 1.6em;
+                list-style-type: none;
+            }
+            .a_class { /* class selector example */
+                color: red;
+            }
+            #a_id { /* id selector example */
+                color: green;
+            }
+            [title=my_attr] { /* attribute selector example */
+		color: blue;
+            }
+            .sp:hover { /* pseudo class selector example */
+		color: dodgerblue;
+            }
+            .letters::before { /* pseudo element selector example */
+                content: '\263a';
+            }
+            .letters::after {
+                content: '\263b';
+            }
+            #ui {
+                display: inline-block;
+                background: linear-gradient(0deg, black, lightslategray);
+                padding: 20px;
+            }
+            #ui .row {
+            }
+            #ui .tile {
+                display: inline-block;
+                border: 2px solid transparent;
+                width: 150px;
+                height: 150px;
+                margin: 20px;
+                color: white;
+            }
+            
+            #ui .row:nth-child(1) .tile {
+                background-color: dodgerblue;
+            }
+            
+            #ui .row:nth-child(2) .tile {
+                background-color: darkviolet;
+            }
+            
+            #ui .row:nth-child(3) .tile {
+                background-color: forestgreen;
+            }
+            
+            #ui .tile:hover {
+                border: 2px solid white;
+            }
+            
+            #fontex {
+                font-size: 3em;
+                line-height: 1.5; /* multiplier */
+            }
+            
+            #f0 {
+            }
+            
+            #f1 {
+                font-family: Helvetica, Arial, sans-serif;
+                
+            }
+            
+            #f2 {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            #f3 {
+                font-family: Georgia, serif;
+            }
+            
+            #f4 {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            #f5 {
+                font-family: 'Trebuchet MS', sans-serif;
+            }
+            
+            #f6 {
+                font-family: Verdana, sans-serif;
+            }
+            
+            #f7 {
+                font-family: cursive;
+            }
+            
+            #f8 {
+                font-family: fantasy;
+            }
+
+            #f9 {
+                text-transform: uppercase;
+            }
+
+            #f10 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+	<p>
+	    CSS example page 1 - this page shows pure HTML + CSS use. No script involved.
+	</p>
+        <p class='a_class'>
+            Class selector example.
+        </p>
+        <p id='a_id'>
+            Id selector example.
+        </p>
+        <p title="my_attr">
+            Attribute selector example.
+        </P>
+        <p>
+            <span class='sp'>Pseudo class selector example - hover over me.</span>
+        </p>
+        <ul>
+            <li class="letters">Pseudo element selector example and unicode symbols.</li>
+        </ul>
+        <div id='ui'>
+            <div class='row'>
+                <div class='tile'>div elements plus css</div>
+                <div class='tile'>&nbsp;</div>
+                <div class='tile'>&nbsp;</div>
+            </div>
+            <div class='row'>
+                <div class='tile'>&nbsp;</div>
+                <div class='tile'>hover tiles</div>
+                <div class='tile'>&nbsp;</div>
+            </div>       
+            <div class='row'>
+                <div class='tile'>&nbsp;</div>
+                <div class='tile'>&nbsp;</div>
+                <div class='tile'>gradient background</div>
+            </div>
+        </div>
+        <div id='fontex'>
+            <div id='f0'>Written in the default font.</div>
+            <div id='f1'>Written in Helvetica or similar font.</div>
+            <div id='f2'>Written in Courier New or similar font.</div>
+            <div id='f3'>Written in Georgia or similar font.</div>
+            <div id='f4'>Written in Times New Roman or similar font.</div>
+            <div id='f5'>Written in Trebuchet MS or similar font.</div>
+            <div id='f6'>Written in Verdana or similar font.</div>
+            <div id='f9'>written in lower-case in the source code</div>
+            <div id='f10'>&#x23FF;</div>
+        </div>
+    </body>
+</html>

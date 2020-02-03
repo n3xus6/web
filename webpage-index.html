@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="n3xus6">
+  <meta name="description" content="HTML example page">
+  <link rel="shortcut icon" href="webpage-content/gfx/goldfish-icon64.bmp">
+  <link rel="stylesheet" href="webpage-content/css/main.css">
+  <title>Example HTML page</title>
+</head>
+<body>
+  <h1 class="headline" >Example HTML page</h1>
+  <p id="First_Paragraph">This example shows the result of creating a simple webpage with
+  the following standard technologies:</p>
+  <ul>
+    <li><strong>HTML</strong></li>
+    <li><strong>CSS</strong></li>
+  </ul>
+  <p>It follows the instructions from
+    <a href="https://developer.mozilla.org/en-US/docs/Learn"
+       title="Learn web development">Learn web development</a>.
+    Open the files in any text editor to look at the code that
+    creates a standard conform webpage.
+  </p>
+  <p><a href="webpage-content/gfx/Goldfish3.jpg" download="Goldfish.jpg">Download</a> picture below.</p>
+  <figure>
+    <img class="picture"
+         src="webpage-content/gfx/Goldfish3.jpg"
+         alt="You should see a picture of a goldfish here, maybe the webpage content was lost."
+         title="A Goldfish"
+         width=784
+         height=840>
+    <figcaption>&lt;figure&gt;, &lt;figcaption&gt; tags</figcaption>
+  </figure>
+  <p><a href="webpage-index.html" target="_blank">Open this page in a new tab</a></p>
+  <p>Some special characters: &#x003c;, &#x003e;, &amp;, &copy;, &#8364;<p>
+  <ol>
+    <li><strong>HTML</strong>'s job is to give text <em><strong>structure</strong></em> and <em><strong>meaning</strong></em> so that browsers can display it.</li>
+    <li>To control the <em><strong>presentation</strong></em> of the page use <strong>CSS</strong>.</li>
+  </ol>
+  <ul>
+    <li>Use &lt;em&gt; or &lt;strong&gt; to give text a meaning. Screen readers can understand this. But don't use &lt;b&gt; for a bold look. Instead define the look in a CSS stylesheet.</li>
+  </ul>
+  <h1>&lt;h1&gt; Title</h1>
+  <p>Paragraph text</p>
+  <h2>&lt;h2&gt; Title</h2>
+  <p>Paragraph text</p>
+  <h3>&lt;h3&gt; Title</h3>
+  <p>...</p>
+  <h6>&lt;h6&gt; Title</h6>
+  <p>Paragraph text</p>
+  <p><a href="#First_Paragraph">Go back to the top</a></p>
+  <p>Next is a <code>&lt;blockquote&gt;</code> from the James Bond Movie Goldfinger.</p>
+  <blockquote cite="https://www.afi.com/100years/quotes.aspx"><p>A martini. Shaken, not stirred.</p></blockquote>
+  <p>You can use the <code>&lt;q&gt;</code> element for <q cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">inline quotations</q> as done here.</p>
+  <p>Here the <code>&lt;cite&gt;</code> element is used. <a href="https://www.afi.com/100years/quotes.aspx"><cite>A martini. Shaken, not stirred.</cite></a></p>
+  <p>Abbreviations with <code>&lt;abbr&gt;</code> tag. <abbr title="European Space Agency">ESA</abbr></p>
+  <p><code>&lt;address&gt;</code> tag:</p>
+  <address>
+    <p>Santa Claus, North Pole.</p>
+  </address>
+  <p>A<sup>1</sup> or A<sub>1</sub>.</p>
+  <p>The is an example of how to insert preformatted code (<code>&lt;pre&gt;&lt;code&gt;</code>):</p>
+  <pre><code>
+  #include &lt;stdlib.h&gt;
+  #include &lt;stdio.h&gt;
+  int main()
+  {
+      int status = EXIT_SUCCESS;
+      puts("Hello world");
+      exit(status);
+  }
+  </code></pre>
+  <p><var>status</var> is an Integer variable (<code>&lt;var&gt;</code> tag).</p>
+  <p>Press <kbd>Alt</kbd>+<kbd>F4</kbd> to close the window (<code>&lt;kbd&gt;</code> tag).</p>
+  <p>Type <kbd>ver</kbd> in the Windows command-line interpreter to get something like (<code>&lt;samp&gt;</code> tag).</p>
+  <pre><samp>Microsoft Windows [Version 10.0.17134.285]</samp></pre>
+  <p>I wrote this on <time datetime="2018-10-03">3 October 2018</time> (<code>&lt;time&gt;</code> tag).</p>
+  <iframe src="webpage-content/htm/dummy.html" width="200" height="100" sandbox></iframe>
+  <p>The <code>&lt;iframe&gt;</code> above uses the sandbox attribute to enable an extra set of restrictions.</p>
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS ist valide!" />
+    </a>
+</p>
+</body>
+</html>
+
