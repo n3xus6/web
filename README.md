@@ -5,12 +5,12 @@ The MDN learning area was used as reference: [Learn web development](https://dev
 
 View the results directly in the browser.
 
-* [CSS example 1](https://n3xus6.github.io/webdev/css-example-1.html)
-* [CSS example 2](https://n3xus6.github.io/webdev/css-example-2.html)
-* [CSS example 3](https://n3xus6.github.io/webdev/css-example-3.html)
-* [Simple web page example](https://n3xus6.github.io/webdev/webpage-index.html)
-* [Events](https://n3xus6.github.io/webdev/basic_events.html)
-* [OOP](https://n3xus6.github.io/webdev/basic_oop.html)
+* [CSS example 1](https://n3xus6.github.io/web/css-example-1.html)
+* [CSS example 2](https://n3xus6.github.io/web/css-example-2.html)
+* [CSS example 3](https://n3xus6.github.io/web/css-example-3.html)
+* [Simple web page example](https://n3xus6.github.io/web/webpage-index.html)
+* [Events](https://n3xus6.github.io/web/basic_events.html)
+* [OOP](https://n3xus6.github.io/web/basic_oop.html)
 
 In Firefox press `Ctrl+Shift+K` to check the program output in the web console window. Note that some examples require Java Script to be enabled.
 
